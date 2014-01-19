@@ -696,6 +696,10 @@ utext_close_48(UText *ut) {
 	return utext_close(ut);
 }
 
+U_CAPI UText * U_EXPORT2
+utext_close_50(UText *ut) {
+	return utext_close(ut);
+}
 
 //
 // invalidateChunk   Reset a chunk to have no contents, so that the next call
@@ -2606,6 +2610,11 @@ utext_openUChars(UText *ut, const UChar *s, int64_t length, UErrorCode *status) 
 
 U_CAPI UText * U_EXPORT2
 utext_openUChars_48(UText *ut, const UChar *s, int64_t length, UErrorCode *status) {
+	return utext_openUChars(ut, s, length, status);
+}
+
+U_CAPI UText * U_EXPORT2
+utext_openUChars_50(UText *ut, const UChar *s, int64_t length, UErrorCode *status) {
 	return utext_openUChars(ut, s, length, status);
 }
 
